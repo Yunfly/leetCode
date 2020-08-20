@@ -17,8 +17,15 @@
  * @param {number[]} inorder
  * @return {TreeNode}
  */
-var buildTree = function(preorder, inorder) {
+var buildTree = function (preorder, inorder) {
+  if (preorder.length == 0 || inorder.length == 0) {
+    return null;
+  }
 
+  const root = new TreeNode(preorder[0]);
+  for (let i = 0; i < inorder.length; i++) {
+
+  }
 };
 // @lc code=end
 
